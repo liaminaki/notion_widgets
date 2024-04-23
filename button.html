@@ -49,7 +49,19 @@
 <body>
 
   <!-- Button to contact -->
-  <a href="mailto:yakogillamac97@gmail.com" class="custom-button">Contact me</a>
+  <a href="#" class="custom-button" onclick="openEmail()">Contact me</a>
 
+  <script>
+    function openEmail() {
+      var email = "yakogillamac06@gmail.com"; // Replace with your email address
+      var mailtoLink = "mailto:" + email;
+      var newWindow = window.open(mailtoLink, '_blank');
+      if (newWindow) {
+        newWindow.focus();
+      } else {
+        alert("Please allow pop-ups for this site to open the email client.");
+      }
+    }
+  </script>
 </body>
 </html>
