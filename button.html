@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Example</title>
+  
+  <style>
+    /* Button styles */
+    .custom-button {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid black;
+      background-color: #fdb221;
+      color: black;
+      font-family: sans-serif;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .custom-button:hover {
+      background-color: white;
+      color: black;
+    }
+
+    /* Remove default button styles */
+    button {
+      appearance: none;
+      border: none;
+      background: none;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button with link -->
+  <a href="https://example.com" class="custom-button" onclick="navigate(event)">Click me</a>
+
+  <script>
+    function navigate(event) {
+      event.preventDefault(); // Prevent the default link behavior
+      window.open("https://example.com", '_blank').focus(); // Change the URL to your desired link
+    }
+  </script>
+</body>
+</html>
