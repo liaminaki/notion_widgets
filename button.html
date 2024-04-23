@@ -7,24 +7,19 @@
   <title>Button Example</title>
   
   <style>
-    /* Reset default margin and padding for HTML and body */
-    html, body {
+    /* Reset default margin and padding for body */
+    body {
       margin: 0;
       padding: 0;
-      width: 100%;
-      height: 100%;
       overflow: hidden; /* Hide overflow to remove any scrollbars */
-    }
-
-    /* Center the button vertically and horizontally */
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     /* Button styles */
     .custom-button {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
       padding: 10px 20px;
       border: 2px solid black;
       background-color: #fdb221;
