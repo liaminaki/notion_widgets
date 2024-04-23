@@ -7,9 +7,24 @@
   <title>Button Example</title>
   
   <style>
+    /* Reset default margin and padding for HTML and body */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; /* Hide overflow to remove any scrollbars */
+    }
+
+    /* Center the button vertically and horizontally */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     /* Button styles */
     .custom-button {
-      display: inline-block;
       padding: 10px 20px;
       border: 2px solid black;
       background-color: #fdb221;
@@ -18,7 +33,6 @@
       text-decoration: none;
       transition: background-color 0.3s, color 0.3s;
       border-radius: 4px; /* Rounded corners */
-      margin-left: 0; /* Remove space outside the left */
     }
 
     .custom-button:hover {
