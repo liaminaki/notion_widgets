@@ -40,10 +40,6 @@
       color: #4267B2;
     }
 
-    .instagram:hover {
-      color: rgb(241, 102, 217);
-    }
-
     .linkedin:hover {
       color: #0e76a8;
     }
@@ -82,12 +78,6 @@
     </div>
     <!-- End Facebook Icon -->
 
-    <!-- Start Instagram Icon -->
-    <div id="instagram" onclick="navigate(this.id)" class="social">
-      <span class="icon instagram"><i class="fab fa-instagram"></i></span>
-    </div>
-    <!-- End Instagram Icon -->
-
     <!-- Start Gmail Icon -->
     <div id="gmail" onclick="navigate(this.id)" class="social">
       <span class="icon gmail"><i class="fas fa-envelope"></i></span>
@@ -99,15 +89,13 @@
   <script>
     function navigate(id) {
       if (id === "github") {
-        window.open("https://github.com/", '_blank').focus();
+        window.open("https://github.com/liaminaki", '_blank').focus();
       } else if (id === "linkedin") {
-        window.open("https://www.linkedin.com/", '_blank').focus();
+        window.open("https://www.linkedin.com/in/liam-iñaki-gillamac-021102/", '_blank').focus();
       } else if (id === "facebook") {
-        window.open("https://facebook.com/", '_blank').focus();
-      } else if (id === "instagram") {
-        window.open("https://instagram.com/", '_blank').focus();
+        window.open("https://www.facebook.com/yakogillamac/", '_blank').focus();
       } else if (id === "gmail") {
-        window.open("mailto:someone@example.com", '_blank').focus(); // Update with your email address
+        window.open("mailto:yakogillamac06@gmail.com", '_blank').focus(); // Update with your email address
       }
     }
   </script>
